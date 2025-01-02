@@ -34,7 +34,7 @@ export const PlaygroundTile: React.FC<PlaygroundTileProps> = ({
     <div
       className={`flex flex-col border rounded-sm border-gray-800 text-gray-500 bg-${backgroundColor} ${className}`}
     >
-      {title && (
+      {/* {title && (
         <div
           className="flex items-center justify-center text-xs uppercase py-2 border-b border-b-gray-800 tracking-wider"
           style={{
@@ -43,7 +43,7 @@ export const PlaygroundTile: React.FC<PlaygroundTileProps> = ({
         >
           <h2>{title}</h2>
         </div>
-      )}
+      )} */}
       <div
         className={`flex flex-col items-center grow w-full ${childrenClassName}`}
         style={{

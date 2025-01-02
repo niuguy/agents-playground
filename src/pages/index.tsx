@@ -6,7 +6,7 @@ import {
 import { AnimatePresence, motion } from "framer-motion";
 import { Inter } from "next/font/google";
 import Head from "next/head";
-import { useCallback, useState } from "react";
+import { useCallback, useState, useEffect } from "react";
 
 import { PlaygroundConnect } from "@/components/PlaygroundConnect";
 import Playground from "@/components/playground/Playground";
@@ -64,6 +64,20 @@ export function HomeInner() {
     }
     return false;
   }, [wsUrl])
+
+  useEffect(() => {
+    const initConnection = async () => {
+      try {
+        if (!shouldConnect) {
+          await connect('env');
+        }
+      } catch (error) {
+        console.error('Failed to connect:', error);
+      }
+    };
+    
+    initConnection();
+  }, [connect, shouldConnect]);
 
   return (
     <>

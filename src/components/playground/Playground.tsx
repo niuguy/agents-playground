@@ -381,7 +381,7 @@ export default function Playground({
 
   return (
     <>
-      <PlaygroundHeader
+      {/* <PlaygroundHeader
         title={config.title}
         logo={logo}
         githubLink={config.github_link}
@@ -391,7 +391,7 @@ export default function Playground({
         onConnectClicked={() =>
           onConnect(roomState === ConnectionState.Disconnected)
         }
-      />
+      /> */}
       <div
         className={`flex gap-4 py-4 grow w-full selection:bg-${config.settings.theme_color}-900`}
         style={{ height: `calc(100% - ${headerHeight}px)` }}
@@ -438,14 +438,14 @@ export default function Playground({
             {chatTileContent}
           </PlaygroundTile>
         )}
-        <PlaygroundTile
+        {/* <PlaygroundTile
           padding={false}
           backgroundColor="gray-950"
           className="h-full w-full basis-1/4 items-start overflow-y-auto hidden max-w-[480px] lg:flex"
           childrenClassName="h-full grow items-start"
         >
           {settingsTileContent}
-        </PlaygroundTile>
+        </PlaygroundTile> */}
       </div>
     </>
   );
