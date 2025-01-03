@@ -365,19 +365,19 @@ export default function Playground({
     });
   }
 
-  mobileTabs.push({
-    title: "Settings",
-    content: (
-      <PlaygroundTile
-        padding={false}
-        backgroundColor="gray-950"
-        className="h-full w-full basis-1/4 items-start overflow-y-auto flex"
-        childrenClassName="h-full grow items-start"
-      >
-        {settingsTileContent}
-      </PlaygroundTile>
-    ),
-  });
+  // mobileTabs.push({
+  //   title: "Settings",
+  //   content: (
+  //     <PlaygroundTile
+  //       padding={false}
+  //       backgroundColor="gray-950"
+  //       className="h-full w-full basis-1/4 items-start overflow-y-auto flex"
+  //       childrenClassName="h-full grow items-start"
+  //     >
+  //       {settingsTileContent}
+  //     </PlaygroundTile>
+  //   ),
+  // });
 
   return (
     <>
